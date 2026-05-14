@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO Meta Tags (Practical 2) -->
+  <meta name="description" content="BrightMark Digital Solutions - Professional digital marketing services including SEO, Social Media, Google Ads, and Web Analytics to grow your business online." />
+  <meta name="keywords" content="digital marketing, SEO services, social media marketing, Google Ads, web analytics, email marketing, online advertising" />
+  <meta name="author" content="BrightMark Digital Solutions" />
+  <meta property="og:title" content="BrightMark Digital Solutions | Grow Your Business Online" />
+  <meta property="og:description" content="Expert digital marketing agency providing SEO, PPC, Social Media and Email Marketing services." />
+  <title>BrightMark Digital Solutions | Grow Your Business Online</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; color: #222; }
+
+    /* Navigation */
+    nav {
+      background: #1a1a2e;
+      padding: 0 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    nav .logo { color: #e94560; font-size: 1.6rem; font-weight: 700; padding: 18px 0; letter-spacing: 1px; }
+    nav ul { list-style: none; display: flex; gap: 30px; }
+    nav ul li a { color: #ccc; text-decoration: none; font-size: 0.95rem; transition: color 0.3s; }
+    nav ul li a:hover { color: #e94560; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: white;
+      padding: 100px 5% 80px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 3rem; margin-bottom: 20px; line-height: 1.2; }
+    .hero h1 span { color: #e94560; }
+    .hero p { font-size: 1.2rem; color: #aaa; max-width: 600px; margin: 0 auto 35px; }
+    .btn { display: inline-block; background: #e94560; color: white; padding: 14px 35px; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: transform 0.2s, box-shadow 0.2s; }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(233,69,96,0.4); }
+
+    /* Services */
+    .services { padding: 80px 5%; background: #f9f9f9; text-align: center; }
+    .services h2 { font-size: 2.2rem; margin-bottom: 10px; color: #1a1a2e; }
+    .services .subtitle { color: #777; margin-bottom: 50px; font-size: 1.05rem; }
+    .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; max-width: 1100px; margin: 0 auto; }
+    .service-card { background: white; border-radius: 12px; padding: 35px 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.07); transition: transform 0.3s; }
+    .service-card:hover { transform: translateY(-6px); }
+    .service-card .icon { font-size: 2.8rem; margin-bottom: 15px; }
+    .service-card h3 { font-size: 1.2rem; color: #1a1a2e; margin-bottom: 10px; }
+    .service-card p { font-size: 0.9rem; color: #666; line-height: 1.6; }
+
+    /* Stats */
+    .stats { background: #e94560; color: white; padding: 60px 5%; text-align: center; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 30px; max-width: 900px; margin: 0 auto; }
+    .stat h3 { font-size: 2.8rem; font-weight: 700; }
+    .stat p { font-size: 0.95rem; opacity: 0.85; margin-top: 5px; }
+
+    /* About */
+    .about { padding: 80px 5%; max-width: 900px; margin: 0 auto; text-align: center; }
+    .about h2 { font-size: 2.2rem; margin-bottom: 20px; color: #1a1a2e; }
+    .about p { color: #555; line-height: 1.8; font-size: 1.05rem; }
+
+    /* Contact */
+    .contact { background: #1a1a2e; color: white; padding: 70px 5%; text-align: center; }
+    .contact h2 { font-size: 2rem; margin-bottom: 10px; }
+    .contact p { color: #aaa; margin-bottom: 30px; }
+    .contact-info { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 20px; }
+    .contact-info div { font-size: 0.95rem; color: #ccc; }
+    .contact-info span { color: #e94560; font-weight: 600; display: block; margin-bottom: 5px; }
+
+    /* Footer */
+    footer { background: #0d0d1a; color: #555; text-align: center; padding: 20px; font-size: 0.85rem; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+      nav ul { gap: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <div class="logo">BrightMark</div>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Grow Your Business <span>Digitally</span></h1>
+    <p>We help brands grow online with result-driven digital marketing strategies — SEO, Ads, Social Media & More.</p>
+    <a href="#contact" class="btn">Get Started Today</a>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <p class="subtitle">Everything your business needs to thrive online</p>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="icon">🔍</div>
+        <h3>SEO Optimization</h3>
+        <p>Improve your search rankings with on-page SEO, keyword strategy, and technical audits.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">📣</div>
+        <h3>Social Media Marketing</h3>
+        <p>Build your brand presence on Facebook, Instagram, and LinkedIn with engaging content.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">📈</div>
+        <h3>Google & Facebook Ads</h3>
+        <p>Drive targeted traffic and maximize ROI with expertly managed PPC campaigns.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">📧</div>
+        <h3>Email Marketing</h3>
+        <p>Reach your audience directly with personalized email campaigns that convert.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">📊</div>
+        <h3>Web Analytics</h3>
+        <p>Understand your audience and make data-driven decisions using Google Analytics.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">💰</div>
+        <h3>Budget Planning</h3>
+        <p>Plan and manage your digital marketing budget for maximum efficiency and returns.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stats-grid">
+      <div class="stat"><h3>500+</h3><p>Happy Clients</p></div>
+      <div class="stat"><h3>98%</h3><p>Client Retention</p></div>
+      <div class="stat"><h3>12K+</h3><p>Campaigns Run</p></div>
+      <div class="stat"><h3>8 Yrs</h3><p>Experience</p></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About BrightMark</h2>
+    <p>BrightMark Digital Solutions is a full-service digital marketing agency dedicated to helping businesses of all sizes achieve their online goals. Our team of experts specializes in SEO, paid advertising, social media management, and data analytics. We believe in transparent, results-driven marketing that delivers real value to our clients.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Get In Touch</h2>
+    <p>Ready to take your business to the next level? Contact us today.</p>
+    <div class="contact-info">
+      <div><span>📍 Address</span>BIHAR</div>
+      <div><span>📞 Phone</span>+91 8825258509</div>
+      <div><span>✉️ Email</span>info@brightmark.in</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 BrightMark Digital Solutions. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
